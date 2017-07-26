@@ -3,15 +3,42 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent" android:background="#9aefc3">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="200dp"
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Button1" />
+        android:text="@string/text1"
+        android:textAlignment="center"
+        android:textColor="#FF043566"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text2"
+        android:textAlignment="center"
+        android:textColor="#FF043566"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="true"
+        android:onClick="onClick"/>
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="200dp"
+        android:id="@+id/button_switch"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Button2" />
+        android:text="switch"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:layout_marginTop="70dp"
+        android:textColor="#1111ff"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
 </LinearLayout>

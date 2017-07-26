@@ -5,26 +5,36 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.TextView;
 
-public class MainActivity extends Activity {
+public class MainActivity extends Activity implements OnClickListener {
 
 
-    private Button button1;
-    private int i;
+    private Button button;
+    private TextView text1;
+    private TextView text2;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d("MainActivity", "onCreate()");
 
-        button1=(Button)findViewById(R.id.button1);
-        button1.setOnClickListener(new View.OnClickListener() {
+        button = (Button) findViewById(R.id.button_switch);
+        text1 = (TextView) findViewById(R.id.text1);
+        text1.setOnClickListener(this);
+        text2 = (TextView) findViewById(R.id.text2);
+        OnClickListener inst = new OnClickListener() {
             @Override
             public void onClick(View v) {
-                button1.setText("button" + i++);
+                CharSequence buffer = text1.getText();
+                text1.setText(text2.getText());
+                text2.setText(buffer);
             }
-        });
+        };
+        button.setOnClickListener(inst);
     }
 
     @Override
@@ -60,5 +70,12 @@ public class MainActivity extends Activity {
         super.onPause();
         Log.d("MainActivity", "onPause()");
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        CharSequence buffer = text1.getText();
+        text1.setText(text2.getText());
+        text2.setText(buffer);
     }
 }
