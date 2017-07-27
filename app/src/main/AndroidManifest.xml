@@ -9,13 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.rudzko.firstapp.MainActivity">
+
+        <activity android:name="com.rudzko.firstapp.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.rudzko.firstapp.hw_1.hw1_Activity"/>
+        <activity android:name="com.rudzko.firstapp.cw_2.cw2_Activity"/>
+        <activity android:name="com.rudzko.firstapp.hw_2.hw2_Activity"/>
+
     </application>
 
 </manifest>

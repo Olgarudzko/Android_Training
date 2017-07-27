@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_text">15dp</dimen>
+    <dimen name="padding_and_letters">20dp</dimen>
+    <dimen name="low_line">30dp</dimen>
+    <dimen name="line_height">45dp</dimen>
+    <dimen name="menu_button_width">60dp</dimen>
+    <dimen name="button_width">90dp</dimen>
+    <dimen name="flag_height">180dp</dimen>
+    <dimen name="line_width">270dp</dimen>
+</resources>

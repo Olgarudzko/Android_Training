@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue">
+
+    <EditText
+        style="@style/title"
+        android:layout_gravity="top"
+        android:text="@string/wcamefirst"
+        android:layout_marginBottom="@dimen/button_width"/>
+
+    <TextView
+        style="@style/my_line"
+        android:id="@+id/text1"
+        android:text="@string/text1"
+        android:textAllCaps="true"/>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="@dimen/menu_button_width"
+        android:layout_height="@dimen/line_height"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
+    <TextView
+        style="@style/my_line"
+        android:id="@+id/text2"
+        android:text="@string/text2"
+        android:textAllCaps="true"
+        android:onClick="onClick"/>
+
+    <Button
+        style="@style/my_button"
+        android:id="@+id/button_switch"
+        android:text="@string/sw"/>
+
+</LinearLayout>

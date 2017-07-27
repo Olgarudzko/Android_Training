@@ -1,44 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:background="#9aefc3">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"    >
 
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="@string/text1"
-        android:textAlignment="center"
-        android:textColor="#FF043566"
-        android:textSize="20dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="130dp"
-        android:textAllCaps="true"/>
-
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="@string/text2"
-        android:textAlignment="center"
-        android:textColor="#FF043566"
-        android:textSize="20dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:textAllCaps="true"
-        android:onClick="onClick"/>
+    <EditText
+        style="@style/title"
+        android:id="@+id/homeworks"
+        android:text="@string/hw" />
 
     <Button
-        android:id="@+id/button_switch"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="switch"
-        android:paddingTop="30dp"
-        android:paddingBottom="30dp"
-        android:layout_marginTop="70dp"
-        android:textColor="#1111ff"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        android:layout_gravity="center"/>
+        style="@style/menu_button"
+        android:id="@+id/hw1_button"
+        android:text="@string/hw1"
+        android:layout_below="@id/homeworks" />
 
-</LinearLayout>
+    <Button
+        style="@style/menu_button"
+        android:id="@+id/hw2_button"
+        android:text="@string/hw2"
+        android:layout_below="@id/homeworks"
+        android:layout_toRightOf="@id/hw1_button" />
+
+    <EditText
+        style="@style/title"
+        android:id="@+id/greeting"
+        android:layout_centerVertical="true" />
+
+    <EditText
+        style="@style/title"
+        android:id="@+id/classworks"
+        android:layout_alignParentBottom="true"
+        android:text="@string/cw"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:background="@color/skyblue"
+        android:textColor="@color/light_blue"/>
+
+    <Button
+        style="@style/menu_button"
+        android:id="@+id/cw2_button"
+        android:text="@string/cw2"
+        android:layout_above="@id/classworks" />
+
+</RelativeLayout>

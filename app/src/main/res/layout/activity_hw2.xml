@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            style="@style/title"
+            android:text="@string/aus" />
+
+        <!--Austrian flag-->
+
+        <FrameLayout
+            style="@style/flag_line"
+            android:layout_marginTop="@dimen/button_text"
+            android:background="@color/red" />
+        <FrameLayout
+            style="@style/flag_line"
+            android:background="@color/white" />
+        <FrameLayout
+            style="@style/flag_line"
+            android:layout_marginBottom="@dimen/button_text"
+            android:background="@color/red" />
+
+        <EditText
+            style="@style/title"
+            android:text="@string/pol" />
+
+        <!--Polish flag-->
+
+        <FrameLayout
+            style="@style/flag_line"
+            android:layout_height="@dimen/button_width"
+            android:layout_marginTop="@dimen/button_text"
+            android:background="@color/white" />
+        <FrameLayout
+            style="@style/flag_line"
+            android:layout_height="@dimen/button_width"
+            android:layout_marginBottom="@dimen/button_text"
+            android:background="@color/red" />
+
+        <EditText
+            style="@style/title"
+            android:text="@string/it" />
+
+        <!--Italian flag-->
+
+        <RelativeLayout
+            android:layout_width="@dimen/line_width"
+            android:layout_height="@dimen/flag_height"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/button_text"
+            android:layout_marginTop="@dimen/button_text">
+
+            <FrameLayout
+                android:id="@+id/it_1"
+                style="@style/flag_column"
+                android:background="@color/green" />
+            <FrameLayout
+                android:id="@+id/it_2"
+                style="@style/flag_column"
+                android:layout_toRightOf="@id/it_1"
+                android:background="@color/white" />
+            <FrameLayout
+                style="@style/flag_column"
+                android:layout_toRightOf="@id/it_2"
+                android:background="@color/red" />
+        </RelativeLayout>
+
+        <EditText
+            style="@style/title"
+            android:text="@string/col" />
+
+        <!--Columbian flag-->
+
+        <FrameLayout
+            style="@style/flag_line"
+            android:layout_height="@dimen/button_width"
+            android:layout_marginTop="@dimen/button_text"
+            android:background="@color/yellow" />
+        <FrameLayout
+            style="@style/flag_line"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/colorPrimary" />
+        <FrameLayout
+            style="@style/flag_line"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginBottom="@dimen/button_text"
+            android:background="@color/red" />
+
+        <EditText
+            style="@style/title"
+            android:text="@string/mad" />
+
+        <!--Flag of Madagascar-->
+
+        <RelativeLayout
+            android:layout_width="@dimen/line_width"
+            android:layout_height="@dimen/flag_height"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/button_text"
+            android:layout_marginTop="@dimen/button_text">
+
+            <FrameLayout
+                android:id="@+id/mad_1"
+                style="@style/flag_column"
+                android:background="@color/white" />
+            <FrameLayout
+                android:id="@+id/mad_2"
+                style="@style/flag_line"
+                android:layout_height="@dimen/button_width"
+                android:layout_toRightOf="@id/mad_1"
+                android:background="@color/red" />
+            <FrameLayout
+                style="@style/flag_line"
+                android:layout_height="@dimen/button_width"
+                android:layout_below="@id/mad_2"
+                android:layout_toRightOf="@id/mad_1"
+                android:background="@color/green" />
+        </RelativeLayout>
+
+        <EditText
+            style="@style/title"
+            android:text="@string/tai" />
+
+        <!--Flag of Thailand-->
+
+        <FrameLayout
+            style="@style/flag_line"
+            android:layout_height="@dimen/low_line"
+            android:layout_marginTop="@dimen/button_text"
+            android:background="@color/red" />
+        <FrameLayout
+            style="@style/flag_line"
+            android:layout_height="@dimen/low_line"
+            android:background="@color/white" />
+        <FrameLayout
+            style="@style/flag_line"
+            android:background="@color/colorPrimary" />
+        <FrameLayout
+            style="@style/flag_line"
+            android:layout_height="@dimen/low_line"
+            android:background="@color/white" />
+        <FrameLayout
+            style="@style/flag_line"
+            android:layout_height="@dimen/low_line"
+            android:layout_marginBottom="@dimen/button_text"
+            android:background="@color/red" />
+        <EditText
+            style="@style/title"
+            android:text="@string/den" />
+
+        <!--Flag of Denmark-->
+
+        <RelativeLayout
+            android:layout_width="@dimen/line_width"
+            android:layout_height="@dimen/flag_height"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/button_text"
+            android:layout_marginTop="@dimen/button_text"
+            android:background="@color/red">
+
+            <FrameLayout
+                style="@style/flag_line"
+                android:layout_height="@dimen/low_line"
+                android:layout_centerVertical="true"
+                android:background="@color/white" />
+            <FrameLayout
+                style="@style/flag_column"
+                android:layout_width="@dimen/low_line"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/button_width"
+                android:background="@color/white" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

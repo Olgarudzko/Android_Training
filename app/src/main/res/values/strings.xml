@@ -1,5 +1,22 @@
 <resources>
-    <string name="app_name">FirstApp</string>
+    <string name="app_name">Student: Olga Rudzko</string>
     <string name="text1">egg</string>
     <string name="text2">chicken</string>
+    <string name="wcamefirst">what came first?</string>
+    <string name="sw">switch</string>
+    <string name="name">name</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="hw">homeworks</string>
+    <string name="cw">classworks</string>
+    <string name="hw1">hw 1</string>
+    <string name="hw2">hw 2</string>
+    <string name="cw2">cw 2</string>
+    <string name="aus">Austria</string>
+    <string name="pol">Poland</string>
+    <string name="it">Italy</string>
+    <string name="col">Columbia</string>
+    <string name="mad">Madagascar</string>
+    <string name="tai">Thailand</string>
+    <string name="den">Denmark</string>
 </resources>
