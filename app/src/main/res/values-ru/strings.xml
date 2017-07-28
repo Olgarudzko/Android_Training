@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Учащийся: Ольга Рудько</string>
+    <string name="text1">яйцо</string>
+    <string name="text2">курица</string>
+    <string name="wcamefirst">что было сначала?</string>
+    <string name="sw">наоборот</string>
+    <string name="name">имя</string>
+    <string name="password">пароль</string>
+    <string name="login">войти</string>
+    <string name="hw">домашние задания</string>
+    <string name="cw">работа в классе</string>
+    <string name="hw1">дз 1</string>
+    <string name="hw2">дз 2</string>
+    <string name="hw3">дз 3</string>
+    <string name="cw2">дз 2</string>
+    <string name="cw3">дз 3</string>
+    <string name="aus">Австрия</string>
+    <string name="pol">Польша</string>
+    <string name="it">Италия</string>
+    <string name="col">Колумбия</string>
+    <string name="mad">Мадагаскар</string>
+    <string name="tai">Таиланд</string>
+    <string name="den">Дания</string>
+    <string name="type_link">ссылка на изображение</string>
+    <string name="show">найти</string>
+    <string name="back">назад</string>
+</resources>

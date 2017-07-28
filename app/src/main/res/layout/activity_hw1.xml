@@ -18,12 +18,6 @@
         android:text="@string/text1"
         android:textAllCaps="true"/>
 
-    <ImageView
-        android:layout_gravity="center"
-        android:layout_width="@dimen/menu_button_width"
-        android:layout_height="@dimen/line_height"
-        app:srcCompat="@android:drawable/arrow_down_float" />
-
     <TextView
         style="@style/my_line"
         android:id="@+id/text2"

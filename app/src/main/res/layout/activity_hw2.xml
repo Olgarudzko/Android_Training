@@ -16,14 +16,14 @@
 
         <!--Austrian flag-->
 
-        <FrameLayout
+        <View
             style="@style/flag_line"
             android:layout_marginTop="@dimen/button_text"
             android:background="@color/red" />
-        <FrameLayout
+        <View
             style="@style/flag_line"
             android:background="@color/white" />
-        <FrameLayout
+        <View
             style="@style/flag_line"
             android:layout_marginBottom="@dimen/button_text"
             android:background="@color/red" />
@@ -34,12 +34,12 @@
 
         <!--Polish flag-->
 
-        <FrameLayout
+        <View
             style="@style/flag_line"
             android:layout_height="@dimen/button_width"
             android:layout_marginTop="@dimen/button_text"
             android:background="@color/white" />
-        <FrameLayout
+        <View
             style="@style/flag_line"
             android:layout_height="@dimen/button_width"
             android:layout_marginBottom="@dimen/button_text"
@@ -58,16 +58,16 @@
             android:layout_marginBottom="@dimen/button_text"
             android:layout_marginTop="@dimen/button_text">
 
-            <FrameLayout
+            <View
                 android:id="@+id/it_1"
                 style="@style/flag_column"
                 android:background="@color/green" />
-            <FrameLayout
+            <View
                 android:id="@+id/it_2"
                 style="@style/flag_column"
                 android:layout_toRightOf="@id/it_1"
                 android:background="@color/white" />
-            <FrameLayout
+            <View
                 style="@style/flag_column"
                 android:layout_toRightOf="@id/it_2"
                 android:background="@color/red" />
@@ -79,16 +79,16 @@
 
         <!--Columbian flag-->
 
-        <FrameLayout
+        <View
             style="@style/flag_line"
             android:layout_height="@dimen/button_width"
             android:layout_marginTop="@dimen/button_text"
             android:background="@color/yellow" />
-        <FrameLayout
+        <View
             style="@style/flag_line"
             android:layout_height="@dimen/line_height"
             android:background="@color/colorPrimary" />
-        <FrameLayout
+        <View
             style="@style/flag_line"
             android:layout_height="@dimen/line_height"
             android:layout_marginBottom="@dimen/button_text"
@@ -107,17 +107,17 @@
             android:layout_marginBottom="@dimen/button_text"
             android:layout_marginTop="@dimen/button_text">
 
-            <FrameLayout
+            <View
                 android:id="@+id/mad_1"
                 style="@style/flag_column"
                 android:background="@color/white" />
-            <FrameLayout
+            <View
                 android:id="@+id/mad_2"
                 style="@style/flag_line"
                 android:layout_height="@dimen/button_width"
                 android:layout_toRightOf="@id/mad_1"
                 android:background="@color/red" />
-            <FrameLayout
+            <View
                 style="@style/flag_line"
                 android:layout_height="@dimen/button_width"
                 android:layout_below="@id/mad_2"
@@ -131,23 +131,23 @@
 
         <!--Flag of Thailand-->
 
-        <FrameLayout
+        <View
             style="@style/flag_line"
             android:layout_height="@dimen/low_line"
             android:layout_marginTop="@dimen/button_text"
             android:background="@color/red" />
-        <FrameLayout
+        <View
             style="@style/flag_line"
             android:layout_height="@dimen/low_line"
             android:background="@color/white" />
-        <FrameLayout
+        <View
             style="@style/flag_line"
             android:background="@color/colorPrimary" />
-        <FrameLayout
+        <View
             style="@style/flag_line"
             android:layout_height="@dimen/low_line"
             android:background="@color/white" />
-        <FrameLayout
+        <View
             style="@style/flag_line"
             android:layout_height="@dimen/low_line"
             android:layout_marginBottom="@dimen/button_text"
@@ -166,12 +166,12 @@
             android:layout_marginTop="@dimen/button_text"
             android:background="@color/red">
 
-            <FrameLayout
+            <View
                 style="@style/flag_line"
                 android:layout_height="@dimen/low_line"
                 android:layout_centerVertical="true"
                 android:background="@color/white" />
-            <FrameLayout
+            <View
                 style="@style/flag_column"
                 android:layout_width="@dimen/low_line"
                 android:layout_centerVertical="true"

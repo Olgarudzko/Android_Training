@@ -11,7 +11,9 @@
     <string name="cw">classworks</string>
     <string name="hw1">hw 1</string>
     <string name="hw2">hw 2</string>
+    <string name="hw3">hw 3</string>
     <string name="cw2">cw 2</string>
+    <string name="cw3">cw 3</string>
     <string name="aus">Austria</string>
     <string name="pol">Poland</string>
     <string name="it">Italy</string>
@@ -19,4 +21,11 @@
     <string name="mad">Madagascar</string>
     <string name="tai">Thailand</string>
     <string name="den">Denmark</string>
+    <string name="type_link">link of the image</string>
+    <string name="show">show</string>
+    <!--<string name="link">https://img1.etsystatic.com/100/1/5655900/il_570xN.831078853_e3ob.jpg</string>-->
+    <!--<string name="link">http://www.marlinavera.com/publishImages/lovers-painting~~element17.png</string>-->
+    <string name="link">http://23.r.photoshare.ru/00232/00236ee8890c64227ea0454f8fbe9b5f156570a7.jpg</string>
+
+    <string name="back">back</string>
 </resources>

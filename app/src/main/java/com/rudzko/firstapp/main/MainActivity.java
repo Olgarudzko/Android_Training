@@ -10,8 +10,10 @@ import android.widget.TextView;
 
 import com.rudzko.firstapp.R;
 import com.rudzko.firstapp.cw_2.cw2_Activity;
+import com.rudzko.firstapp.cw_3.cw3_Activity;
 import com.rudzko.firstapp.hw_1.hw1_Activity;
 import com.rudzko.firstapp.hw_2.hw2_Activity;
+import com.rudzko.firstapp.hw_3.hw3_Activity;
 
 /**
  * @author Olga Rudzko
@@ -39,6 +41,24 @@ public class MainActivity extends Activity {
             }
         });
 
+        Button hw2=(Button) findViewById(R.id.hw2_button);
+        hw2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, hw2_Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button hw3=(Button) findViewById(R.id.hw3_button);
+        hw3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, hw3_Activity.class);
+                startActivity(intent);
+            }
+        });
+
         Button cw2 = (Button) findViewById(R.id.cw2_button);
         cw2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,11 +68,11 @@ public class MainActivity extends Activity {
             }
         });
 
-        Button hw2=(Button) findViewById(R.id.hw2_button);
-        hw2.setOnClickListener(new View.OnClickListener() {
+        Button cw3 = (Button) findViewById(R.id.cw3_button);
+        cw3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, hw2_Activity.class);
+                Intent intent = new Intent(MainActivity.this, cw3_Activity.class);
                 startActivity(intent);
             }
         });

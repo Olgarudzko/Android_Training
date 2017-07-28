@@ -17,6 +17,7 @@
         <item name="android:paddingBottom">@dimen/padding_and_letters</item>
         <item name="android:layout_marginTop">@dimen/padding_and_letters</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textAllCaps">true</item>
     </style>
 
     <style name="my_line">
@@ -34,6 +35,14 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="oval_button">
+        <item name="android:layout_height">@dimen/button_width</item>
+        <item name="android:layout_width">@dimen/flag_height</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:layout_marginTop">@dimen/button_text</item>
+        <item name="android:textColor">@color/button_text</item>
     </style>
 
     <style name="title">

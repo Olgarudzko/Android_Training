@@ -17,11 +17,18 @@
         android:layout_below="@id/homeworks" />
 
     <Button
+    style="@style/menu_button"
+    android:id="@+id/hw2_button"
+    android:text="@string/hw2"
+    android:layout_below="@id/homeworks"
+    android:layout_toRightOf="@id/hw1_button" />
+
+    <Button
         style="@style/menu_button"
-        android:id="@+id/hw2_button"
-        android:text="@string/hw2"
+        android:id="@+id/hw3_button"
+        android:text="@string/hw3"
         android:layout_below="@id/homeworks"
-        android:layout_toRightOf="@id/hw1_button" />
+        android:layout_toRightOf="@id/hw2_button" />
 
     <EditText
         style="@style/title"
@@ -43,5 +50,11 @@
         android:id="@+id/cw2_button"
         android:text="@string/cw2"
         android:layout_above="@id/classworks" />
+    <Button
+        style="@style/menu_button"
+        android:id="@+id/cw3_button"
+        android:text="@string/cw3"
+        android:layout_above="@id/classworks"
+        android:layout_toRightOf="@id/cw2_button"/>
 
 </RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        style="@style/my_line">
+        <EditText
+            android:id="@+id/link"
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/line_width"
+            android:background="@color/white"
+            android:hint="@string/type_link"
+            android:text="@string/link" />
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_text"
+        android:maxHeight="300dp"
+        android:maxWidth="300dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/padding_and_letters"
+        android:id="@+id/painter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/button_show"
+        style="@style/oval_button"
+        android:text="@string/show" />
+
+</LinearLayout>
