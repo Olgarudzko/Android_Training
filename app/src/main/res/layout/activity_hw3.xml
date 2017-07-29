@@ -25,7 +25,7 @@
         android:maxHeight="300dp"
         android:maxWidth="300dp"
         android:scaleType="centerCrop"
-        android:contentDescription="@string/type_link"/>
+        android:contentDescription="@string/hw3"/>
 
     <TextView
         android:textColor="@color/colorPrimaryDark"

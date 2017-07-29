@@ -32,6 +32,6 @@ class RoundPicture implements Transformation {
 
     @Override
     public String key() {
-        return null;
+        return "roundPicture";
     }
 }
