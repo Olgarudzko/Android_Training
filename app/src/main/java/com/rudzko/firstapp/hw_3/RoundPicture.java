@@ -12,26 +12,26 @@ import com.squareup.picasso.Transformation;
  * @author Olga Rudzko
  */
 
-public class RoundPicture implements Transformation {
+class RoundPicture implements Transformation {
     @Override
-    public Bitmap transform(Bitmap round) {
+    public Bitmap transform(Bitmap source) {
         final Paint paint = new Paint();
         paint.setAntiAlias(true);
-        BitmapShader bs=new BitmapShader(round, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
+        BitmapShader bs=new BitmapShader(source, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
         paint.setShader(bs);
 
-        final Bitmap result = Bitmap.createBitmap(round.getWidth(), round.getHeight(), Bitmap.Config.ARGB_8888);
+        final Bitmap result = Bitmap.createBitmap(source.getWidth(), source.getHeight(), Bitmap.Config.ARGB_8888);
         final Canvas canvas = new Canvas(result);
-        canvas.drawCircle(round.getWidth() / 2, round.getHeight() / 2, round.getWidth() / 2, paint);
+        canvas.drawOval(0, 0, source.getWidth(), source.getHeight(), paint);
 
-        if (round != result)
-            round.recycle();
+        if (source != result)
+            source.recycle();
 
         return result;
     }
 
     @Override
     public String key() {
-        return "round";
+        return null;
     }
 }

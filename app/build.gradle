@@ -5,7 +5,8 @@ android {
     buildToolsVersion "26.0.0"
     defaultConfig {
         applicationId "com.rudzko.training"
-        minSdkVersion 17
+        minSdkVersion 21
+        //noinspection OldTargetApi
         targetSdkVersion 25
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }

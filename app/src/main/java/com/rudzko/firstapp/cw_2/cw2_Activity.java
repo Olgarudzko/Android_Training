@@ -16,6 +16,9 @@ import com.rudzko.firstapp.main.MainActivity;
  */
 
 public class cw2_Activity extends Activity {
+
+    private int i;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,36 +29,22 @@ public class cw2_Activity extends Activity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(cw2_Activity.this, MainActivity.class);
-                intent.putExtra(MainActivity.KEY_USERNAME, name.getText().toString());
-                intent.putExtra(MainActivity.KEY_PASSWORD, password.getText().toString());
-                startActivity(intent);
+                String name_got = name.getText().toString();
+                if (!(name_got.trim().equals(""))) {
+                    Intent intent = new Intent(cw2_Activity.this, MainActivity.class);
+                    intent.putExtra(MainActivity.KEY_USERNAME, name.getText().toString());
+                    intent.putExtra(MainActivity.KEY_PASSWORD, password.getText().toString());
+                    startActivity(intent);
+                } else {
+                    StringBuilder sb =new StringBuilder(getString(R.string.type_name));
+                    for (int y = 0; y <i ; y++) {
+                        sb.append('!');
+                    }
+                    i++;
+                    name.setHint(sb.toString());
+                }
             }
         });
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
 }

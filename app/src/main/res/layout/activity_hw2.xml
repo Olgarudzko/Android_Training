@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/light_blue"
@@ -12,7 +13,9 @@
 
         <EditText
             style="@style/title"
-            android:text="@string/aus" />
+            android:text="@string/aus"
+            tools:ignore="LabelFor"
+            android:inputType="text"/>
 
         <!--Austrian flag-->
 
@@ -30,7 +33,9 @@
 
         <EditText
             style="@style/title"
-            android:text="@string/pol" />
+            android:text="@string/pol"
+            tools:ignore="LabelFor"
+            android:inputType="text"/>
 
         <!--Polish flag-->
 
@@ -47,7 +52,9 @@
 
         <EditText
             style="@style/title"
-            android:text="@string/it" />
+            android:text="@string/it"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
 
         <!--Italian flag-->
 
@@ -65,17 +72,19 @@
             <View
                 android:id="@+id/it_2"
                 style="@style/flag_column"
-                android:layout_toRightOf="@id/it_1"
+                android:layout_toEndOf="@id/it_1"
                 android:background="@color/white" />
             <View
                 style="@style/flag_column"
-                android:layout_toRightOf="@id/it_2"
+                android:layout_toEndOf="@id/it_2"
                 android:background="@color/red" />
         </RelativeLayout>
 
         <EditText
             style="@style/title"
-            android:text="@string/col" />
+            android:text="@string/col"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
 
         <!--Columbian flag-->
 
@@ -96,7 +105,9 @@
 
         <EditText
             style="@style/title"
-            android:text="@string/mad" />
+            android:text="@string/mad"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
 
         <!--Flag of Madagascar-->
 
@@ -115,19 +126,21 @@
                 android:id="@+id/mad_2"
                 style="@style/flag_line"
                 android:layout_height="@dimen/button_width"
-                android:layout_toRightOf="@id/mad_1"
+                android:layout_toEndOf="@id/mad_1"
                 android:background="@color/red" />
             <View
                 style="@style/flag_line"
                 android:layout_height="@dimen/button_width"
                 android:layout_below="@id/mad_2"
-                android:layout_toRightOf="@id/mad_1"
+                android:layout_toEndOf="@id/mad_1"
                 android:background="@color/green" />
         </RelativeLayout>
 
         <EditText
             style="@style/title"
-            android:text="@string/tai" />
+            android:text="@string/tai"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
 
         <!--Flag of Thailand-->
 
@@ -154,7 +167,9 @@
             android:background="@color/red" />
         <EditText
             style="@style/title"
-            android:text="@string/den" />
+            android:text="@string/den"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
 
         <!--Flag of Denmark-->
 
@@ -175,7 +190,7 @@
                 style="@style/flag_column"
                 android:layout_width="@dimen/low_line"
                 android:layout_centerVertical="true"
-                android:layout_marginLeft="@dimen/button_width"
+                android:layout_marginStart="@dimen/button_width"
                 android:background="@color/white" />
 
         </RelativeLayout>

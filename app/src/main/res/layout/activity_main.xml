@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,7 +9,9 @@
     <EditText
         style="@style/title"
         android:id="@+id/homeworks"
-        android:text="@string/hw" />
+        android:text="@string/hw"
+        android:inputType="text"
+        tools:ignore="LabelFor" />
 
     <Button
         style="@style/menu_button"
@@ -21,29 +24,33 @@
     android:id="@+id/hw2_button"
     android:text="@string/hw2"
     android:layout_below="@id/homeworks"
-    android:layout_toRightOf="@id/hw1_button" />
+    android:layout_toEndOf="@id/hw1_button" />
 
     <Button
         style="@style/menu_button"
         android:id="@+id/hw3_button"
         android:text="@string/hw3"
         android:layout_below="@id/homeworks"
-        android:layout_toRightOf="@id/hw2_button" />
+        android:layout_toEndOf="@id/hw2_button" />
 
     <EditText
+        android:inputType="text"
         style="@style/title"
         android:id="@+id/greeting"
-        android:layout_centerVertical="true" />
+        android:layout_centerVertical="true"
+        tools:ignore="LabelFor" />
 
     <EditText
         style="@style/title"
+        android:inputType="text"
         android:id="@+id/classworks"
         android:layout_alignParentBottom="true"
         android:text="@string/cw"
         android:textAllCaps="true"
         android:textStyle="bold"
         android:background="@color/skyblue"
-        android:textColor="@color/light_blue"/>
+        android:textColor="@color/light_blue"
+        tools:ignore="LabelFor" />
 
     <Button
         style="@style/menu_button"
@@ -55,6 +62,6 @@
         android:id="@+id/cw3_button"
         android:text="@string/cw3"
         android:layout_above="@id/classworks"
-        android:layout_toRightOf="@id/cw2_button"/>
+        android:layout_toEndOf="@id/cw2_button"/>
 
 </RelativeLayout>

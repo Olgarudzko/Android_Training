@@ -24,4 +24,5 @@
     <string name="type_link">ссылка на изображение</string>
     <string name="show">найти</string>
     <string name="back">назад</string>
+    <string name="type_name">Обязательное поле!</string>
 </resources>
