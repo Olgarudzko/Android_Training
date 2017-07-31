@@ -10,7 +10,7 @@
         style="@style/title"
         android:id="@+id/homeworks"
         android:text="@string/hw"
-        android:inputType="text"
+        android:inputType="none"
         tools:ignore="LabelFor" />
 
     <Button
@@ -34,7 +34,7 @@
         android:layout_toEndOf="@id/hw2_button" />
 
     <EditText
-        android:inputType="text"
+        android:inputType="none"
         style="@style/title"
         android:id="@+id/greeting"
         android:layout_centerVertical="true"
@@ -42,7 +42,7 @@
 
     <EditText
         style="@style/title"
-        android:inputType="text"
+        android:inputType="none"
         android:id="@+id/classworks"
         android:layout_alignParentBottom="true"
         android:text="@string/cw"

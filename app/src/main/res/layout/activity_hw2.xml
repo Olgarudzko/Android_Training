@@ -15,7 +15,7 @@
             style="@style/title"
             android:text="@string/aus"
             tools:ignore="LabelFor"
-            android:inputType="text"/>
+            android:inputType="none"/>
 
         <!--Austrian flag-->
 
@@ -35,7 +35,7 @@
             style="@style/title"
             android:text="@string/pol"
             tools:ignore="LabelFor"
-            android:inputType="text"/>
+            android:inputType="none"/>
 
         <!--Polish flag-->
 
@@ -53,7 +53,7 @@
         <EditText
             style="@style/title"
             android:text="@string/it"
-            android:inputType="text"
+            android:inputType="none"
             tools:ignore="LabelFor" />
 
         <!--Italian flag-->
@@ -83,7 +83,7 @@
         <EditText
             style="@style/title"
             android:text="@string/col"
-            android:inputType="text"
+            android:inputType="none"
             tools:ignore="LabelFor" />
 
         <!--Columbian flag-->
@@ -106,7 +106,7 @@
         <EditText
             style="@style/title"
             android:text="@string/mad"
-            android:inputType="text"
+            android:inputType="none"
             tools:ignore="LabelFor" />
 
         <!--Flag of Madagascar-->
@@ -139,7 +139,7 @@
         <EditText
             style="@style/title"
             android:text="@string/tai"
-            android:inputType="text"
+            android:inputType="none"
             tools:ignore="LabelFor" />
 
         <!--Flag of Thailand-->
@@ -168,7 +168,7 @@
         <EditText
             style="@style/title"
             android:text="@string/den"
-            android:inputType="text"
+            android:inputType="none"
             tools:ignore="LabelFor" />
 
         <!--Flag of Denmark-->
