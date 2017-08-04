@@ -3,6 +3,7 @@
     package="com.rudzko.firstapp">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:name="MyApplication"
@@ -20,11 +21,20 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.rudzko.firstapp.hw_1.hw1_Activity"/>
-        <activity android:name="com.rudzko.firstapp.hw_2.hw2_Activity"/>
-        <activity android:name="com.rudzko.firstapp.hw_3.hw3_Activity"/>
-        <activity android:name="com.rudzko.firstapp.cw_2.cw2_Activity"/>
-        <activity android:name="com.rudzko.firstapp.cw_3.cw3_Activity"/>
+        <activity android:name="com.rudzko.firstapp.hw_1.hw1_Activity" />
+        <activity android:name="com.rudzko.firstapp.hw_2.hw2_Activity" />
+        <activity android:name="com.rudzko.firstapp.hw_3.hw3_Activity" />
+        <activity android:name="com.rudzko.firstapp.hw_4.HW4_Activity" />
+        <activity android:name="com.rudzko.firstapp.hw_5.HW5_Activity" />
+        <activity android:name="com.rudzko.firstapp.cw_2.cw2_Activity" />
+        <activity android:name="com.rudzko.firstapp.cw_3.cw3_Activity" />
+        <activity android:name="com.rudzko.firstapp.cw_4.CW4_Activity" />
+        <activity android:name="com.rudzko.firstapp.cw_5.CW5_Activity" />
+        <activity android:name="com.rudzko.firstapp.cw_6.CW6_Activity" />
+
+
+        <service android:name="com.rudzko.firstapp.cw_5.MyService"/>
+        <service android:name="com.rudzko.firstapp.cw_5.MyIntentService"/>
 
     </application>
 

@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_blue"    >
+    android:background="@color/light_blue">
 
     <EditText
         style="@style/title"
@@ -32,7 +32,18 @@
         android:text="@string/hw3"
         android:layout_below="@id/homeworks"
         android:layout_toEndOf="@id/hw2_button" />
-
+    <Button
+        style="@style/menu_button"
+        android:id="@+id/hw4_button"
+        android:text="@string/hw4"
+        android:layout_below="@id/homeworks"
+        android:layout_toEndOf="@id/hw3_button" />
+    <Button
+        style="@style/menu_button"
+        android:id="@+id/hw5_button"
+        android:text="@string/hw5"
+        android:layout_below="@id/homeworks"
+        android:layout_toEndOf="@id/hw4_button" />
     <EditText
         android:inputType="none"
         style="@style/title"
@@ -63,5 +74,22 @@
         android:text="@string/cw3"
         android:layout_above="@id/classworks"
         android:layout_toEndOf="@id/cw2_button"/>
-
+    <Button
+        style="@style/menu_button"
+        android:id="@+id/cw4_button"
+        android:text="@string/cw4"
+        android:layout_above="@id/classworks"
+        android:layout_toEndOf="@id/cw3_button"/>
+    <Button
+        style="@style/menu_button"
+        android:id="@+id/cw5_button"
+        android:text="@string/cw5"
+        android:layout_above="@id/classworks"
+        android:layout_toEndOf="@id/cw4_button"/>
+    <Button
+        style="@style/menu_button"
+        android:id="@+id/cw6_button"
+        android:text="@string/cw6"
+        android:layout_above="@id/classworks"
+        android:layout_toEndOf="@id/cw5_button"/>
 </RelativeLayout>

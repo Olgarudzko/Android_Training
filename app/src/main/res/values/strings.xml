@@ -7,13 +7,19 @@
     <string name="name">name</string>
     <string name="password">password</string>
     <string name="login">login</string>
+    <string name="greeting">glad to see you,</string>
     <string name="hw">homeworks</string>
     <string name="cw">classworks</string>
     <string name="hw1">hw 1</string>
     <string name="hw2">hw 2</string>
     <string name="hw3">hw 3</string>
+    <string name="hw4">hw 4</string>
+    <string name="hw5">hw 5</string>
     <string name="cw2">cw 2</string>
     <string name="cw3">cw 3</string>
+    <string name="cw4">cw 4</string>
+    <string name="cw5">cw 5</string>
+    <string name="cw6">cw 6</string>
     <string name="aus">Austria</string>
     <string name="pol">Poland</string>
     <string name="it">Italy</string>
@@ -28,4 +34,7 @@
     <string name="link">http://23.r.photoshare.ru/00232/00236ee8890c64227ea0454f8fbe9b5f156570a7.jpg</string>
     <string name="back">back</string>
     <string name="type_name">Name is mandatory!</string>
+    <string name="wtt">OMG, what is the time?!</string>
+    <string name="con">Internet: connected</string>
+    <string name="discon">Internet: disconnected</string>
 </resources>

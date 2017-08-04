@@ -23,8 +23,7 @@ public class cw3_Activity extends Activity{
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(cw3_Activity.this, MainActivity.class);
-                startActivity(intent);
+                onBackPressed();
             }
         });
     }
