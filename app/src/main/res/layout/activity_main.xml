@@ -1,95 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_blue">
+    android:background="@color/light_blue"
+    android:orientation="vertical">
 
     <EditText
-        style="@style/title"
         android:id="@+id/homeworks"
+        style="@style/title"
+        android:inputType="none"
         android:text="@string/hw"
-        android:inputType="none"
         tools:ignore="LabelFor" />
 
-    <Button
-        style="@style/menu_button"
-        android:id="@+id/hw1_button"
-        android:text="@string/hw1"
-        android:layout_below="@id/homeworks" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_below="@id/homeworks"
+        android:gravity="center">
 
-    <Button
-    style="@style/menu_button"
-    android:id="@+id/hw2_button"
-    android:text="@string/hw2"
-    android:layout_below="@id/homeworks"
-    android:layout_toEndOf="@id/hw1_button" />
+        <Button
+            android:id="@+id/hw1_button"
+            style="@style/menu_button"
+            android:text="@string/hw1" />
 
-    <Button
-        style="@style/menu_button"
-        android:id="@+id/hw3_button"
-        android:text="@string/hw3"
-        android:layout_below="@id/homeworks"
-        android:layout_toEndOf="@id/hw2_button" />
-    <Button
-        style="@style/menu_button"
-        android:id="@+id/hw4_button"
-        android:text="@string/hw4"
-        android:layout_below="@id/homeworks"
-        android:layout_toEndOf="@id/hw3_button" />
-    <Button
-        style="@style/menu_button"
-        android:id="@+id/hw5_button"
-        android:text="@string/hw5"
-        android:layout_below="@id/homeworks"
-        android:layout_toEndOf="@id/hw4_button" />
+        <Button
+            android:id="@+id/hw2_button"
+            style="@style/menu_button"
+            android:layout_toEndOf="@id/hw1_button"
+            android:text="@string/hw2" />
+
+        <Button
+            android:id="@+id/hw3_button"
+            style="@style/menu_button"
+            android:layout_toEndOf="@id/hw2_button"
+            android:text="@string/hw3" />
+
+        <Button
+            android:id="@+id/hw4_button"
+            style="@style/menu_button"
+            android:layout_toEndOf="@id/hw3_button"
+            android:text="@string/hw4" />
+
+        <Button
+            android:id="@+id/hw5_button"
+            style="@style/menu_button"
+            android:layout_toEndOf="@id/hw4_button"
+            android:text="@string/hw5" />
+
+        <Button
+            android:id="@+id/hw6_button"
+            style="@style/menu_button"
+            android:layout_below="@id/hw1_button"
+            android:text="@string/hw6" />
+    </RelativeLayout>
+
     <EditText
-        android:inputType="none"
-        style="@style/title"
         android:id="@+id/greeting"
+        style="@style/title"
         android:layout_centerVertical="true"
+        android:inputType="none"
         tools:ignore="LabelFor" />
 
     <EditText
-        style="@style/title"
-        android:inputType="none"
         android:id="@+id/classworks"
+        style="@style/title"
         android:layout_alignParentBottom="true"
+        android:background="@color/skyblue"
+        android:inputType="none"
         android:text="@string/cw"
         android:textAllCaps="true"
-        android:textStyle="bold"
-        android:background="@color/skyblue"
         android:textColor="@color/light_blue"
+        android:textStyle="bold"
         tools:ignore="LabelFor" />
 
-    <Button
-        style="@style/menu_button"
-        android:id="@+id/cw2_button"
-        android:text="@string/cw2"
-        android:layout_above="@id/classworks" />
-    <Button
-        style="@style/menu_button"
-        android:id="@+id/cw3_button"
-        android:text="@string/cw3"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
         android:layout_above="@id/classworks"
-        android:layout_toEndOf="@id/cw2_button"/>
-    <Button
-        style="@style/menu_button"
-        android:id="@+id/cw4_button"
-        android:text="@string/cw4"
-        android:layout_above="@id/classworks"
-        android:layout_toEndOf="@id/cw3_button"/>
-    <Button
-        style="@style/menu_button"
-        android:id="@+id/cw5_button"
-        android:text="@string/cw5"
-        android:layout_above="@id/classworks"
-        android:layout_toEndOf="@id/cw4_button"/>
-    <Button
-        style="@style/menu_button"
-        android:id="@+id/cw6_button"
-        android:text="@string/cw6"
-        android:layout_above="@id/classworks"
-        android:layout_toEndOf="@id/cw5_button"/>
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cw2_button"
+            style="@style/menu_button"
+            android:text="@string/cw2" />
+
+        <Button
+            android:id="@+id/cw3_button"
+            style="@style/menu_button"
+            android:layout_toEndOf="@id/cw2_button"
+            android:text="@string/cw3" />
+
+        <Button
+            android:id="@+id/cw4_button"
+            style="@style/menu_button"
+            android:layout_toEndOf="@id/cw3_button"
+            android:text="@string/cw4" />
+
+        <Button
+            android:id="@+id/cw5_button"
+            style="@style/menu_button"
+            android:layout_toEndOf="@id/cw4_button"
+            android:text="@string/cw5" />
+
+        <Button
+            android:id="@+id/cw6_button"
+            style="@style/menu_button"
+            android:layout_toEndOf="@id/cw5_button"
+            android:text="@string/cw6" />
+
+    </RelativeLayout>
+
 </RelativeLayout>

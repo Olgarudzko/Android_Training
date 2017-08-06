@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="between_buttons">5dp</dimen>
     <dimen name="button_text">15dp</dimen>
     <dimen name="padding_and_letters">20dp</dimen>
     <dimen name="low_line">30dp</dimen>

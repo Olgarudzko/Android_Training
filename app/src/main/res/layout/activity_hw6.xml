@@ -7,12 +7,14 @@
 
     <TextView
         style="@style/title"
-        android:text="@string/chinese"/>
+        android:text="@string/vangogh"
+        android:layout_marginBottom="@dimen/padding_and_letters"/>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/list"
+        android:id="@+id/gallery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center">
 
+    </android.support.v7.widget.RecyclerView>
 </LinearLayout>

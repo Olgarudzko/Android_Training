@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:name="MyApplication"
         android:allowBackup="true"
@@ -26,6 +26,7 @@
         <activity android:name="com.rudzko.firstapp.hw_3.hw3_Activity" />
         <activity android:name="com.rudzko.firstapp.hw_4.HW4_Activity" />
         <activity android:name="com.rudzko.firstapp.hw_5.HW5_Activity" />
+        <activity android:name="com.rudzko.firstapp.hw_6.HW6_Activity" />
         <activity android:name="com.rudzko.firstapp.cw_2.cw2_Activity" />
         <activity android:name="com.rudzko.firstapp.cw_3.cw3_Activity" />
         <activity android:name="com.rudzko.firstapp.cw_4.CW4_Activity" />

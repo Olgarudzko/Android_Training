@@ -13,10 +13,13 @@ import com.rudzko.firstapp.cw_2.cw2_Activity;
 import com.rudzko.firstapp.cw_3.cw3_Activity;
 import com.rudzko.firstapp.cw_4.CW4_Activity;
 import com.rudzko.firstapp.cw_5.CW5_Activity;
+import com.rudzko.firstapp.cw_6.CW6_Activity;
 import com.rudzko.firstapp.hw_1.hw1_Activity;
 import com.rudzko.firstapp.hw_2.hw2_Activity;
 import com.rudzko.firstapp.hw_3.hw3_Activity;
 import com.rudzko.firstapp.hw_4.HW4_Activity;
+import com.rudzko.firstapp.hw_5.HW5_Activity;
+import com.rudzko.firstapp.hw_6.HW6_Activity;
 
 /**
  * @author Olga Rudzko
@@ -38,91 +41,28 @@ public class MainActivity extends Activity {
             String str=getString(R.string.greeting)+" "+username;
             tw.setText(str);
         }
-        Button hw1 = (Button) findViewById(R.id.hw1_button);
-        hw1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { go(hw1_Activity.class);}
-        });
-
-        Button hw2=(Button) findViewById(R.id.hw2_button);
-        hw2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { go(hw2_Activity.class);}
-        });
-
-        Button hw3=(Button) findViewById(R.id.hw3_button);
-        hw3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {go(hw3_Activity.class);  }
-        });
-
-        Button hw4=(Button) findViewById(R.id.hw4_button);
-        hw4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { go(HW4_Activity.class);}
-        });
-        Button hw5=(Button) findViewById(R.id.hw5_button);
-        hw5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { go(HW4_Activity.class);}
-        });
-        Button cw2 = (Button) findViewById(R.id.cw2_button);
-        cw2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { go(cw2_Activity.class);}
-        });
-
-        Button cw3 = (Button) findViewById(R.id.cw3_button);
-        cw3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { go(cw3_Activity.class); }
-        });
-        Button cw4 = (Button) findViewById(R.id.cw4_button);
-        cw4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { go(CW4_Activity.class); }
-        });
-
-        Button cw5 = (Button) findViewById(R.id.cw5_button);
-        cw5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { go(CW5_Activity.class); }
-        });
-
-        Button cw6 = (Button) findViewById(R.id.cw6_button);
-        cw6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) { go(CW5_Activity.class); }
-        });}
-
-    @Override
-    protected void onStart() {
-        super.onStart();
+        createButton(R.id.hw1_button, hw1_Activity.class);
+        createButton(R.id.hw2_button, hw2_Activity.class);
+        createButton(R.id.hw3_button, hw3_Activity.class);
+        createButton(R.id.hw4_button, HW4_Activity.class);
+        createButton(R.id.hw5_button, HW5_Activity.class);
+        createButton(R.id.hw6_button, HW6_Activity.class);
+        createButton(R.id.cw2_button, cw2_Activity.class);
+        createButton(R.id.cw3_button, cw3_Activity.class);
+        createButton(R.id.cw4_button, CW4_Activity.class);
+        createButton(R.id.cw5_button, CW5_Activity.class);
+        createButton(R.id.cw6_button, CW6_Activity.class);
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
+    private Button createButton(int link, final Class cls){
+        Button newButton= (Button) findViewById(link);
+        newButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, cls));
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            }
+        });
+        return newButton;
     }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
     }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
-    private void go(Class cls){
-        Intent intent = new Intent(MainActivity.this, cls);
-        startActivity(intent);
-        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-    }
-}

@@ -15,6 +15,7 @@
     <string name="hw3">hw 3</string>
     <string name="hw4">hw 4</string>
     <string name="hw5">hw 5</string>
+    <string name="hw6">hw 6</string>
     <string name="cw2">cw 2</string>
     <string name="cw3">cw 3</string>
     <string name="cw4">cw 4</string>
@@ -37,4 +38,6 @@
     <string name="wtt">OMG, what is the time?!</string>
     <string name="con">Internet: connected</string>
     <string name="discon">Internet: disconnected</string>
+    <string name="chinese">chinese characters</string>
+    <string name="vangogh">Vincent van Gogh, dutch painter, 1853&#8211;1890</string>
 </resources>

@@ -5,6 +5,7 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
     </style>
 
     <style name="my_button">
@@ -35,6 +36,7 @@
         <item name="android:layout_width">@dimen/menu_button_width</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/button_text</item>
+        <item name="android:layout_margin">@dimen/between_buttons</item>
         <item name="android:textAllCaps">true</item>
     </style>
 
