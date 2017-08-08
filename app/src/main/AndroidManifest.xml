@@ -37,6 +37,7 @@
 
         <service android:name="com.rudzko.firstapp.cw_5.MyService"/>
         <service android:name="com.rudzko.firstapp.cw_5.MyIntentService"/>
+        <service android:name="com.rudzko.firstapp.hw_5.HW5_Service"/>
 
     </application>
 
