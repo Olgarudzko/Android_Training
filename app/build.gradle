@@ -17,14 +17,18 @@ android {
         }
     }
 
-    productFlavors{
-        dev{
+    dataBinding {
+        enabled = true;
+    }
+
+    productFlavors {
+        dev {
             versionCode 1
             versionName "1.0-dev"
             buildConfigField "String", "API_ENDPOINT", "\"Picasso P. Woman in a Stripped Hat\""
         }
 
-        prod{
+        prod {
             versionCode 1
             versionName "1.0-prod"
 
@@ -51,5 +55,6 @@ dependencies {
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5.1'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
     testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.1'
+    annotationProcessor  'com.android.databinding:compiler:2.3.0'
 }
 

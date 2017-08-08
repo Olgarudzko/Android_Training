@@ -32,6 +32,7 @@
         <activity android:name="com.rudzko.firstapp.cw_4.CW4_Activity" />
         <activity android:name="com.rudzko.firstapp.cw_5.CW5_Activity" />
         <activity android:name="com.rudzko.firstapp.cw_6.CW6_Activity" />
+        <activity android:name="com.rudzko.firstapp.cw_7.CW7_Activity" />
 
 
         <service android:name="com.rudzko.firstapp.cw_5.MyService"/>

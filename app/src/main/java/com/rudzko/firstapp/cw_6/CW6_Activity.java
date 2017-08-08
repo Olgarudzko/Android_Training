@@ -21,6 +21,7 @@ public class CW6_Activity extends Activity {
             "night", "sky", "star", "think", "wind"};
     private ArrayList<Drawable> characters = new ArrayList<>();
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,5 +43,14 @@ public class CW6_Activity extends Activity {
 
         MyAdapter adapter = new MyAdapter(words, characters);
         rv.setAdapter(adapter);
+        adapter.setListener(new MyAdapter.OnItemClickListener(){
+
+            @Override
+            public void onItemClick(String item) {
+                onBackPressed();
+                //action
+            }
+        });
     }
+
 }

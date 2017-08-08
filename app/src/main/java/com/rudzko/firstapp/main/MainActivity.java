@@ -14,6 +14,7 @@ import com.rudzko.firstapp.cw_3.cw3_Activity;
 import com.rudzko.firstapp.cw_4.CW4_Activity;
 import com.rudzko.firstapp.cw_5.CW5_Activity;
 import com.rudzko.firstapp.cw_6.CW6_Activity;
+import com.rudzko.firstapp.cw_7.CW7_Activity;
 import com.rudzko.firstapp.hw_1.hw1_Activity;
 import com.rudzko.firstapp.hw_2.hw2_Activity;
 import com.rudzko.firstapp.hw_3.hw3_Activity;
@@ -52,6 +53,8 @@ public class MainActivity extends Activity {
         createButton(R.id.cw4_button, CW4_Activity.class);
         createButton(R.id.cw5_button, CW5_Activity.class);
         createButton(R.id.cw6_button, CW6_Activity.class);
+        createButton(R.id.cw7_button, CW7_Activity.class);
+
     }
 
     private Button createButton(int link, final Class cls){

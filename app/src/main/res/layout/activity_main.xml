@@ -108,6 +108,11 @@
             style="@style/menu_button"
             android:layout_toEndOf="@id/cw5_button"
             android:text="@string/cw6" />
+        <Button
+            android:id="@+id/cw7_button"
+            style="@style/menu_button"
+            android:layout_below="@id/cw2_button"
+            android:text="@string/cw7" />
 
     </RelativeLayout>
 

@@ -3,7 +3,6 @@ package com.rudzko.firstapp.cw_5;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
-import android.support.annotation.Nullable;
 import android.util.Log;
 
 /**
@@ -11,7 +10,7 @@ import android.util.Log;
  */
 
 public class MyService extends Service {
-    @Nullable
+
     @Override
     public IBinder onBind(Intent intent) {
         Log.e("message bind", "onBind");

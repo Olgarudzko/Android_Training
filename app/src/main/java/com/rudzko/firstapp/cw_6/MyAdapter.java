@@ -22,6 +22,11 @@ class MyAdapter extends RecyclerView.Adapter<MyAdapter.Holder> {
 
     private String[] items;
     private ArrayList<Drawable> images;
+    private OnItemClickListener listener;
+
+    public void setListener(OnItemClickListener listener) {
+        this.listener = listener;
+    }
 
     MyAdapter(String[] items, ArrayList<Drawable> images) {
         this.items = items;
@@ -38,9 +43,19 @@ class MyAdapter extends RecyclerView.Adapter<MyAdapter.Holder> {
     @Override
     public void onBindViewHolder(Holder holder, int position) {
         Log.e("msg_bind_holder", "onBindViewHolder: position " + position);
-        String item = items[position];
+        final String item = items[position];
         holder.tV.setText(item);
         holder.iV.setBackground(images.get(position));
+
+        holder.tV.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                if(listener!=null){
+                    listener.onItemClick(item);
+                }
+            }
+        });
     }
 
     @Override
@@ -60,5 +75,8 @@ class MyAdapter extends RecyclerView.Adapter<MyAdapter.Holder> {
         }
     }
 
+    interface OnItemClickListener{
+        void onItemClick(String item);
+    }
 
 }

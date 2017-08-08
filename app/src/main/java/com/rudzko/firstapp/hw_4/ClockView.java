@@ -21,7 +21,7 @@ import java.util.Locale;
  * @author Olga Rudzko
  */
 
-public class ClockView extends View {
+public class ClockView extends View{
 
     private Paint myPaint = new Paint();
     private String time[] = {"12", " 3", " 6 ", "9 "};
@@ -31,6 +31,8 @@ public class ClockView extends View {
     String currentTime;
     float angle;
     int rad;
+    Canvas canvas;
+    Thread thread;
 
     public ClockView(Context context) {
         super(context);
@@ -53,10 +55,6 @@ public class ClockView extends View {
     }
 
     private void settings() {
-        Date today = new Date();
-        angle = 0;
-        SimpleDateFormat timeDate = new SimpleDateFormat("hh:mm:ss", Locale.ENGLISH);
-        currentTime = timeDate.format(today);
         myPaint.setAntiAlias(true);
         myPaint.setColor(ContextCompat.getColor(getContext(), R.color.colorPrimaryDark));
         myPaint.setStyle(Paint.Style.STROKE);
@@ -69,6 +67,7 @@ public class ClockView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        this.canvas=canvas;
         centerX = getWidth() / 2;
         centerY = getHeight() / 2;
         rad = (Math.min((int) centerX, (int) centerY));
@@ -90,6 +89,19 @@ public class ClockView extends View {
             canvas.drawCircle(centerX, centerY - rad + 30, size, myPaint);
             canvas.rotate(6, centerX, centerY);
         }
+//        askTime();
+//        countAngle();
+    }
+
+    private float[] getCenter(String s) {
+        float[] points = new float[2];
+        points[0] = myPaint.measureText(s) / 2;
+        myPaint.getTextBounds(s, 0, time[0].length(), textRect);
+        points[1] = textRect.height() / 2;
+        return points;
+    }
+
+    public void countAngle(){
         int hours = Integer.valueOf(currentTime.substring(0, 2));
         int min = Integer.valueOf(currentTime.substring(3, 5));
         int sec = Integer.valueOf(currentTime.substring(6));
@@ -105,7 +117,7 @@ public class ClockView extends View {
             canvas.rotate(0.5f/60, centerX, centerY);
             angle+=0.5f/60;
         }
-        drawArrow(canvas, 0.6f, 15, R.color.colorPrimaryDark);
+        drawArrow(0.6f, 15, R.color.colorPrimaryDark);
         for (int i=0; i<min; i++){
             canvas.rotate(6, centerX, centerY);
             angle+=6;
@@ -114,23 +126,22 @@ public class ClockView extends View {
             canvas.rotate(0.1f, centerX, centerY);
             angle+=0.1f;
         }
-        drawArrow(canvas, 0.8f, 10, R.color.colorPrimaryDark);
+        drawArrow(0.8f, 10, R.color.colorPrimaryDark);
         for (int i=0; i<sec; i++){
             canvas.rotate(6, centerX, centerY);
             angle+=6;
         }
-        drawArrow(canvas, 0.95f, 5, R.color.red);
+        drawArrow(0.95f, 5, R.color.red);
     }
 
-    private float[] getCenter(String s) {
-        float[] points = new float[2];
-        points[0] = myPaint.measureText(s) / 2;
-        myPaint.getTextBounds(s, 0, time[0].length(), textRect);
-        points[1] = textRect.height() / 2;
-        return points;
+    private void askTime(){
+        Date today = new Date();
+        angle = 0;
+        SimpleDateFormat timeDate = new SimpleDateFormat("hh:mm:ss", Locale.ENGLISH);
+        currentTime = timeDate.format(today);
     }
 
-    private void drawArrow(Canvas canvas, float lenghtPart, int width, int color) {
+    private void drawArrow(float lenghtPart, int width, int color) {
         myPaint.setStrokeWidth(width);
         myPaint.setColor(ContextCompat.getColor(getContext(), color));
         myPaint.setStyle(Paint.Style.FILL);
@@ -139,6 +150,8 @@ public class ClockView extends View {
         canvas.drawCircle(centerX, y, width * 0.9f, myPaint);
         canvas.drawCircle(centerX, centerY, width * 1.5f, myPaint);
         canvas.rotate(360 - angle, centerX, centerY);
-        settings();
+        askTime();
     }
+
+
 }
