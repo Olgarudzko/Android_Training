@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="itemModel"
+            type="com.rudzko.firstapp.hw_9.ItemViewModel"/>
+    </data>
+    <RelativeLayout
+        android:layout_width="195dp"
+        android:layout_height="125dp"
+        android:layout_margin="@dimen/between_buttons"
+        android:background="@color/light_blue"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/gallery_element"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            myapp:item_image="@{itemModel.url}"
+            tools:ignore="ContentDescription" />
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/my_bar"-->
+            <!--style="@style/Widget.AppCompat.ProgressBar"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:visibility="visible" />-->
+
+    </RelativeLayout>
+</layout>

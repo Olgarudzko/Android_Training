@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rudzko.firstapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:name="MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.rudzko.firstapp.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.rudzko.firstapp.hw_1.hw1_Activity" />
+        <activity android:name="com.rudzko.firstapp.hw_2.hw2_Activity" />
+        <activity android:name="com.rudzko.firstapp.hw_3.hw3_Activity" />
+        <activity android:name="com.rudzko.firstapp.hw_4.HW4_Activity" />
+        <activity android:name="com.rudzko.firstapp.hw_5.HW5_Activity" />
+        <activity android:name="com.rudzko.firstapp.hw_6.HW6_Activity" />
+        <activity android:name="com.rudzko.firstapp.hw_7.HW7_Activity" />
+        <activity android:name="com.rudzko.firstapp.hw_9.HW9_Activity" />
+        <activity android:name="com.rudzko.firstapp.cw_2.cw2_Activity" />
+        <activity android:name="com.rudzko.firstapp.cw_3.cw3_Activity" />
+        <activity android:name="com.rudzko.firstapp.cw_4.CW4_Activity" />
+        <activity android:name="com.rudzko.firstapp.cw_5.CW5_Activity" />
+        <activity android:name="com.rudzko.firstapp.cw_6.CW6_Activity" />
+        <activity android:name="com.rudzko.firstapp.cw_7.CW7_Activity" />
+        <activity android:name="com.rudzko.firstapp.cw_8.CW8_Activity" />
+        <activity android:name="com.rudzko.firstapp.cw_9.CW9_Activity" />
+
+
+        <service android:name="com.rudzko.firstapp.cw_5.MyService"/>
+        <service android:name="com.rudzko.firstapp.cw_5.MyIntentService"/>
+        <service android:name="com.rudzko.firstapp.hw_5.HW5_Service"/>
+
+    </application>
+
+</manifest>

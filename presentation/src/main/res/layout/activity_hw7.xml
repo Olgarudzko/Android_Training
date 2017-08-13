@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="user"
+            type="com.rudzko.firstapp.hw_7.User" />
+    </data>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@{user.male ? @color/light_blue : @color/light_pink}"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                myapp:photo="@{user.photo}"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/title"
+                    android:layout_alignParentTop="true"
+                    android:text="@{user.name}"
+                    android:textColor="@{user.male ? @color/light_blue : @color/light_pink}"
+                    android:background="@{user.male ? @color/colorPrimary : @color/pink}" />
+
+                <ImageView
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/arrow_forward"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/age"
+                style="@style/title"
+                android:layout_alignParentBottom="true"
+                android:background="@{user.male ? @color/colorPrimary : @color/pink}"
+                android:textColor="@{user.male ? @color/light_blue : @color/light_pink}"
+                android:text="@{String.valueOf(user.birthYear)}" />
+        </RelativeLayout>
+</layout>
