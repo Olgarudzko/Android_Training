@@ -2,10 +2,7 @@ package com.rudzko.firstapp.hw_7;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
-import android.databinding.BindingAdapter;
-import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
 import com.rudzko.firstapp.BR;
 
 /**
@@ -71,8 +68,4 @@ public class User extends BaseObservable {
         this.male = male;
     }
 
-    @BindingAdapter({"bind:photo"})
-    public static void addPhoto(ImageView view, String link){
-        Glide.with(view.getContext()).load(link).into(view);
-    }
 }
