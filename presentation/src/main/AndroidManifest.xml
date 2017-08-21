@@ -29,6 +29,7 @@
         <activity android:name="com.rudzko.firstapp.hw_6.HW6_Activity" />
         <activity android:name="com.rudzko.firstapp.hw_7.HW7_Activity" />
         <activity android:name="com.rudzko.firstapp.hw_9.HW9_Activity" />
+        <activity android:name="com.rudzko.firstapp.hw_10.HW10_Activity" />
         <activity android:name="com.rudzko.firstapp.cw_2.cw2_Activity" />
         <activity android:name="com.rudzko.firstapp.cw_3.cw3_Activity" />
         <activity android:name="com.rudzko.firstapp.cw_4.CW4_Activity" />
@@ -37,7 +38,10 @@
         <activity android:name="com.rudzko.firstapp.cw_7.CW7_Activity" />
         <activity android:name="com.rudzko.firstapp.cw_8.CW8_Activity" />
         <activity android:name="com.rudzko.firstapp.cw_9.CW9_Activity" />
+        <activity android:name="com.rudzko.firstapp.cw_12.CW12_Activity" />
 
+        <activity android:name="com.rudzko.firstapp.cw_12.ProfileActivity"/>
+        <activity android:name="com.rudzko.firstapp.cw_12.AddProfileActivity"/>
 
         <service android:name="com.rudzko.firstapp.cw_5.MyService"/>
         <service android:name="com.rudzko.firstapp.cw_5.MyIntentService"/>

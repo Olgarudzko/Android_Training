@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.rudzko.firstapp.R;
+import com.rudzko.firstapp.cw_12.CW12_Activity;
 import com.rudzko.firstapp.cw_2.cw2_Activity;
 import com.rudzko.firstapp.cw_3.cw3_Activity;
 import com.rudzko.firstapp.cw_4.CW4_Activity;
@@ -18,6 +19,7 @@ import com.rudzko.firstapp.cw_7.CW7_Activity;
 import com.rudzko.firstapp.cw_8.CW8_Activity;
 import com.rudzko.firstapp.cw_9.CW9_Activity;
 import com.rudzko.firstapp.hw_1.hw1_Activity;
+import com.rudzko.firstapp.hw_10.HW10_Activity;
 import com.rudzko.firstapp.hw_2.hw2_Activity;
 import com.rudzko.firstapp.hw_3.hw3_Activity;
 import com.rudzko.firstapp.hw_4.HW4_Activity;
@@ -54,6 +56,7 @@ public class MainActivity extends Activity {
         createButton(R.id.hw6_button, HW6_Activity.class);
         createButton(R.id.hw7_button, HW7_Activity.class);
         createButton(R.id.hw9_button, HW9_Activity.class);
+        createButton(R.id.hw10_button, HW10_Activity.class);
         createButton(R.id.cw2_button, cw2_Activity.class);
         createButton(R.id.cw3_button, cw3_Activity.class);
         createButton(R.id.cw4_button, CW4_Activity.class);
@@ -62,6 +65,7 @@ public class MainActivity extends Activity {
         createButton(R.id.cw7_button, CW7_Activity.class);
         createButton(R.id.cw8_button, CW8_Activity.class);
         createButton(R.id.cw9_button, CW9_Activity.class);
+        createButton(R.id.cw12_button, CW12_Activity.class);
 
     }
 

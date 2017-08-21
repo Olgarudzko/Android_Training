@@ -18,6 +18,8 @@
     <string name="hw6">hw 6</string>
     <string name="hw7">hw 7</string>
     <string name="hw9">hw 9</string>
+    <string name="hw10">hw 10</string>
+    <string name="hw12">hw 11</string>
     <string name="cw2">cw 2</string>
     <string name="cw3">cw 3</string>
     <string name="cw4">cw 4</string>
@@ -46,4 +48,8 @@
     <string name="chinese">chinese characters</string>
     <string name="vangogh">Vincent van Gogh, dutch painter, 1853&#8211;1890</string>
     <string name="avatar">Avatar, James Cameron, 2009</string>
+    <string name="adduser">add</string>
+    <string name="age">age</string>
+    <string name="edit">edit</string>
+
 </resources>

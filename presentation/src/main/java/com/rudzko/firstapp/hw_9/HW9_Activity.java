@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import com.rudzko.firstapp.R;
 import com.rudzko.firstapp.base.BaseActivity;
@@ -32,4 +33,5 @@ public class HW9_Activity extends BaseActivity{
         view.setLayoutManager(new GridLayoutManager(view.getContext(), 2));
         view.setAdapter(new GalleryAdapter(items));
     }
+
 }

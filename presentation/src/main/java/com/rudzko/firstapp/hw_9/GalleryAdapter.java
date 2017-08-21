@@ -28,8 +28,8 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.MyItemHo
 
     @Override
     public MyItemHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        ItemViewmodelBinding binding=ItemViewmodelBinding
-                .inflate( LayoutInflater.from(parent.getContext()), parent, false);
+        ItemViewmodelBinding binding = ItemViewmodelBinding
+                .inflate(LayoutInflater.from(parent.getContext()), parent, false);
         return new MyItemHolder(binding.getRoot());
     }
 
@@ -43,18 +43,20 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.MyItemHo
         return items.length;
     }
 
+
+
     class MyItemHolder extends RecyclerView.ViewHolder {
 
         ItemViewmodelBinding binding;
 
         MyItemHolder(View itemView) {
             super(itemView);
-            binding= DataBindingUtil.bind(itemView);
+            binding = DataBindingUtil.bind(itemView);
         }
     }
 
     @BindingAdapter({"bind:item_image"})
-    public static void loadImg(ImageView view, String url){
+    public static void loadImg(ImageView view, String url) {
         Glide.with(view.getContext()).load(url)
                 .bitmapTransform(new CenterCrop(view.getContext()),
                         new RoundedCornersTransformation(view.getContext(), 30, 0)).into(view);

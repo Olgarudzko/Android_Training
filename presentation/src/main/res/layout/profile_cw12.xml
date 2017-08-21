@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="profile"
+            type="com.rudzko.firstapp.cw_12.ProfileViewModel"/>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/light_blue"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="@dimen/padding_and_letters"
+            android:src="@{profile.age>18 ? @drawable/adult : profile.age>10 ? @drawable/teen : @drawable/kid}"/>
+        <TextView
+            style="@style/title"
+            android:text="@{profile.person}"
+            android:layout_marginBottom="@dimen/button_width"/>
+
+        <EditText
+            android:id="@+id/name_edit"
+            style="@style/my_line"
+            android:hint="@string/name"/>
+
+        <EditText
+            android:id="@+id/age_edit"
+            android:inputType="number"
+            style="@style/my_line"
+            android:hint="@string/age"
+            android:layout_marginTop="@dimen/padding_and_letters"/>
+        <Button
+            android:id="@+id/edit_button"
+            style="@style/oval_button"
+            android:text="@string/edit" />
+    </LinearLayout>
+
+</layout>

@@ -4,7 +4,7 @@ package com.rudzko.firstapp.domain.entity;
  * @author Olga Rudzko
  */
 
-public class AvatarGalleryItem {
+public class AvatarGalleryItem implements DomainModel {
     private String url;
 
     public AvatarGalleryItem() {

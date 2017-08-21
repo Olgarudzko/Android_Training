@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="form"
+            type="com.rudzko.firstapp.cw_12.AddProfileViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/light_blue">
+
+        <EditText
+            android:id="@+id/name"
+            style="@style/my_line"
+            android:hint="@string/name"
+            android:background="@color/white"/>
+
+        <EditText
+            android:background="@color/white"
+            android:id="@+id/age"
+            android:inputType="number"
+            style="@style/my_line"
+            android:hint="@string/age"
+            android:layout_marginTop="@dimen/padding_and_letters"/>
+
+        <Button
+            android:id="@+id/add_profile"
+            style="@style/oval_button"
+            android:text="@string/adduser" />
+
+    </LinearLayout>
+</layout>

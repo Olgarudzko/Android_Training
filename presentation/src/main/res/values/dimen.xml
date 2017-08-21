@@ -9,4 +9,6 @@
     <dimen name="button_width">90dp</dimen>
     <dimen name="flag_height">180dp</dimen>
     <dimen name="line_width">270dp</dimen>
+    <dimen name="element_hight">400dp</dimen>
+
 </resources>

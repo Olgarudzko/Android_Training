@@ -4,6 +4,13 @@ import com.rudzko.firstapp.domain.entity.AvatarGalleryItem;
 import com.rudzko.firstapp.domain.entity.AvatarId;
 import com.rudzko.firstapp.domain.interactions.base.UseCase;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
+import io.reactivex.Observable;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.observers.DisposableObserver;
+import io.reactivex.schedulers.Schedulers;
+
 /**
  * @author Olga Rudzko
  */
@@ -25,15 +32,12 @@ public class AvatarUseCase extends UseCase<AvatarId, AvatarGalleryItem> {
             "https://goo.gl/CZoLUN"
     };
 
-    @Override
-    protected AvatarGalleryItem buildUseCase() {
-        return null;
-    }
 
+    private static AtomicInteger i=new AtomicInteger(0);
     @Override
-    protected AvatarGalleryItem buildUseCase(AvatarId id) {
+    protected Observable<AvatarGalleryItem> buildUseCase(AvatarId id) {
         AvatarGalleryItem item=new AvatarGalleryItem();
-        item.setUrl(contents[id.getId()]);
-        return item;
+        item.setUrl(contents[i.getAndIncrement()]);
+        return Observable.just(item);
     }
 }

@@ -42,23 +42,7 @@ public class HW6_Activity extends Activity {
         setContentView(R.layout.activity_hw6);
         RecyclerView gallery = (RecyclerView) findViewById(R.id.gallery);
         gallery.setLayoutManager(new GridLayoutManager(this, 3));
-
-
-//        Scanner urlReader;
-//        String s="C:\\Users\\Leta\\AndroidStudioProjects\\Android_Training\\app\\src\\main\\java\\com\\rudzko\\firstapp\\hw_6\\url.txt";
-//        try {
-//            urlReader=new Scanner(new File(s));
-//            int length=urlReader.nextInt();
-//            url=new String[length];
-//            for (int i=0; i<length; i++){
-//                url[i]=urlReader.nextLine();
-//            }
-//        } catch (FileNotFoundException e) {
-//            e.printStackTrace();
-//        }
-
         gallery.setAdapter(new GalleryAdapter(url));
-
     }
 
     @Override

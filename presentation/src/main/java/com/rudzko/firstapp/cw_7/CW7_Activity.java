@@ -9,6 +9,7 @@ import android.support.annotation.Nullable;
 import com.rudzko.firstapp.R;
 import com.rudzko.firstapp.databinding.ActivityCw7Binding;
 
+
 /**
  * @author Olga Rudzko
  */

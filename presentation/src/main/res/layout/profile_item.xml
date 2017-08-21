@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.rudzko.firstapp.cw_12.ProfileItemViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_margin="@dimen/button_text"
+        android:background="@color/skyblue"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@{viewModel.name.get()}"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/low_line"
+            tools:text="NAME" />
+
+    </LinearLayout>
+</layout>

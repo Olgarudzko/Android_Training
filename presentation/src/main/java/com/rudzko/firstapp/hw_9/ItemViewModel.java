@@ -16,4 +16,8 @@ public class ItemViewModel {
         this.url.set(url);
     }
 
+    @Override
+    public String toString() {
+        return "Item ["+url.get()+"]";
+    }
 }
