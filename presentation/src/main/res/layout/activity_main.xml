@@ -78,6 +78,11 @@
             android:layout_below="@id/hw2_button"
             android:text="@string/hw12"
             android:layout_toEndOf="@id/hw10_button"/>
+        <Button
+            android:id="@+id/hw14_button"
+            style="@style/menu_button"
+            android:layout_below="@id/hw6_button"
+            android:text="@string/hw14"/>
     </RelativeLayout>
 
     <EditText
@@ -151,7 +156,23 @@
             android:layout_below="@id/cw2_button"
             android:text="@string/cw9"
             android:layout_toEndOf="@id/cw8_button"/>
-
+        <Button
+            android:id="@+id/cw13_button"
+            style="@style/menu_button"
+            android:layout_below="@id/cw2_button"
+            android:text="@string/cw13"
+            android:layout_toEndOf="@id/cw9_button"/>
+        <Button
+            android:id="@+id/cw14_button"
+            style="@style/menu_button"
+            android:layout_below="@id/cw2_button"
+            android:text="@string/cw14"
+            android:layout_toEndOf="@id/cw13_button"/>
+        <Button
+            android:id="@+id/cw16_button"
+            style="@style/menu_button"
+            android:layout_below="@id/cw7_button"
+            android:text="@string/cw16"/>
     </RelativeLayout>
 
 </RelativeLayout>

@@ -7,7 +7,7 @@ package com.rudzko.firstapp.base;
 public interface BaseViewModel {
 
     void init();
-    void release();
     void resume();
+    void release();
     void pause();
 }

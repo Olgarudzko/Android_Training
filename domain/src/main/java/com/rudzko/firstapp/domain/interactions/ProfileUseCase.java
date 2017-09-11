@@ -21,11 +21,6 @@ public class ProfileUseCase extends UseCase<ProfileId, Profile> {
     @Override
     protected Observable<Profile> buildUseCase(ProfileId Param) {
 
-        //request to data
-
-//        SourceProfile income = new SourceProfile();
-//        income.setName("User from domain");
-//        income.setAge(25);
         return RestService.getInstance().getSourceProfiles().map(new Function<List<SourceProfile>, Profile>() {
             @Override
             public Profile apply(@NonNull List<SourceProfile> sourceProfiles) throws Exception {

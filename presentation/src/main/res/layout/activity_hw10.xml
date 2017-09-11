@@ -14,8 +14,11 @@
         android:gravity="center">
 
         <TextView
-            style="@style/title"
-            android:text="@{String.valueOf(model.counter)}"/>
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@{String.valueOf(model.counter)}"
+            android:textSize="@dimen/flag_height"
+            android:textColor="@color/skyblue"/>
 
     </LinearLayout>
 </layout>

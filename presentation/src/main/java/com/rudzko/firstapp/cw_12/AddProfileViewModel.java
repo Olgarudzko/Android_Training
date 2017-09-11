@@ -2,7 +2,6 @@ package com.rudzko.firstapp.cw_12;
 
 import android.databinding.ObservableField;
 import android.databinding.ObservableInt;
-import android.util.Log;
 
 import com.rudzko.firstapp.base.BaseViewModel;
 import com.rudzko.firstapp.domain.entity.Profile;

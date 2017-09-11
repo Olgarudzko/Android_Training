@@ -20,6 +20,7 @@
     <string name="hw9">hw 9</string>
     <string name="hw10">hw 10</string>
     <string name="hw12">hw 11</string>
+    <string name="hw14">hw 14</string>
     <string name="cw2">cw 2</string>
     <string name="cw3">cw 3</string>
     <string name="cw4">cw 4</string>
@@ -28,6 +29,9 @@
     <string name="cw7">cw 7</string>
     <string name="cw8">cw 8</string>
     <string name="cw9">cw 9</string>
+    <string name="cw13">cw 13</string>
+    <string name="cw14">cw 14</string>
+    <string name="cw16">cw 16</string>
     <string name="aus">Austria</string>
     <string name="pol">Poland</string>
     <string name="it">Italy</string>
@@ -37,8 +41,6 @@
     <string name="den">Denmark</string>
     <string name="type_link">link of the image</string>
     <string name="show">show</string>
-    <!--<string name="link">https://img1.etsystatic.com/100/1/5655900/il_570xN.831078853_e3ob.jpg</string>-->
-    <!--<string name="link">http://www.marlinavera.com/publishImages/lovers-painting~~element17.png</string>-->
     <string name="link">http://23.r.photoshare.ru/00232/00236ee8890c64227ea0454f8fbe9b5f156570a7.jpg</string>
     <string name="back">back</string>
     <string name="type_name">Name is mandatory!</string>
@@ -51,5 +53,7 @@
     <string name="adduser">add</string>
     <string name="age">age</string>
     <string name="edit">edit</string>
+    <string name="fragm1">Show 1</string>
+    <string name="fragm2">Show 2</string>
 
 </resources>

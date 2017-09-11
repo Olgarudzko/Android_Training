@@ -1,0 +1,11 @@
+"SELECT * FROM user" for all data from table user
+"SELECT id, name FROM user" requests all ids&names from table user
+"SELECT * FROM user WHERE countryId=1" requests all data from table user with countryId 1
+"SELECT * FROM user WHERE name='Ivan'"
+"SELECT * FROM user INNER JOIN country ON user.countryId=country.id WHERE age<20" returns everything that can be merged
+"SELECT * FROM user LEFT JOIN country ON user.countryId=country.id WHERE age<20" returns everything from left (first) table including nulls from second (right) table where data can't be merged
+"SELECT * FROM user RIGHT JOIN country ON user.countryId=country.id WHERE age<20" returns everything from right table
+"SELECT * FROM user LIMIT 20" returns first 20 entries
+"SELECT * FROM user LIMIT 20 OFFSET 20" returns entries from 20 to 40
+"SELECT * FROM user ORDER BY age ASC" sorts from minimum to maximum
+"SELECT * FROM user ORDER BY age DESC" sorts from maximum to minimum

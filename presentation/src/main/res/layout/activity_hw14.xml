@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="model"
+            type="com.rudzko.firstapp.hw_14.ViewModel_HW14" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_blue"
+        android:orientation="vertical"
+        android:gravity="center">
+       <EditText
+           android:id="@+id/person_name"
+           style="@style/my_line"
+           android:background="@color/white"
+           android:layout_marginBottom="@dimen/between_buttons"/>
+        <Spinner
+            android:id="@+id/world_spinner"
+            android:background="@color/white"
+            android:layout_width="@dimen/line_width"
+            android:layout_height="@dimen/line_height" />
+        <Button
+            style="@style/oval_button"
+            android:text="add"
+            android:onClick="@{model::addToDB}"/>
+        <TextView
+            android:id="@+id/all_profiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_and_letters"
+            android:text="Show all profiles"
+            android:onClick="@{model::showDB}"/>
+    </LinearLayout>
+</layout>
