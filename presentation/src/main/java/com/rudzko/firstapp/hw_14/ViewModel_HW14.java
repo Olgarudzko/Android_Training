@@ -30,7 +30,7 @@ public class ViewModel_HW14 implements BaseViewModel {
     String json = null;
     JSONArray array;
     HW14_Activity activity;
-    ArrayList<MyCountry> codes= new ArrayList<>();
+    ArrayList<MyCountry> codes = new ArrayList<>();
     AddPersonToDB addPerson = new AddPersonToDB();
     GetPersonsFromDB getAllPersons = new GetPersonsFromDB();
 
@@ -62,7 +62,7 @@ public class ViewModel_HW14 implements BaseViewModel {
                 codes.add(new MyCountry(obj.getString("name"), obj.getString("code")));
                 Log.d(obj.getString("name"), obj.getString("code"));
             } catch (JSONException e) {
-                Log.e("Finding object", "Cant get object "+i);
+                Log.e("Finding object", "Cant get object " + i);
             }
         }
     }
@@ -79,16 +79,19 @@ public class ViewModel_HW14 implements BaseViewModel {
 
     @Override
     public void pause() {
-    addPerson.dispose();
+        addPerson.dispose();
     }
 
     public void addToDB(View view) {
-        String name=activity.binding.personName.getText().toString();
-        MyCountry country=activity.adapter.getChosen();
-        AddPerson ready=new AddPerson();
+        String name = activity.binding.personName.getText().toString();
+        // MyCountry country=activity.adapter.getChosen();
+        MyCountry country = codes.get(activity.binding.worldSpinner.getSelectedItemPosition());
+        Log.d("User chose country", country.getName());
+        AddPerson ready = new AddPerson();
         ready.setContext(activity);
         ready.setPerson(new com.rudzko.firstapp.domain.entity.Person
                 (name, new com.rudzko.firstapp.domain.entity.MyCountry(country.getName(), country.getCode())));
+        Log.d("AddPerson created from", ready.getPerson().getCountry().getName());
         addPerson.execute(ready, new DisposableObserver<Void>() {
             @Override
             public void onNext(@NonNull Void aVoid) {
@@ -111,9 +114,11 @@ public class ViewModel_HW14 implements BaseViewModel {
         getAllPersons.execute(activity, new DisposableObserver<List<com.rudzko.firstapp.domain.entity.Person>>() {
             @Override
             public void onNext(@NonNull List<Person> persons) {
-              StringBuilder sb=new StringBuilder();
-                for (Person one: persons){
-                    sb.append(one.getId()).append(". ").append(one.getName()).append(" from ").append(one.getCountry().getName()).append("\n");
+                StringBuilder sb = new StringBuilder();
+                for (Person one : persons) {
+                    sb.append(one.getId()).append(". ").append(one.getName()).
+                            append(" from ").append(one.getCountry().getName()).
+                            append("\n");
                 }
                 activity.binding.allProfiles.setText(sb.toString());
             }

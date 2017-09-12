@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.text.Editable;
 import android.view.View;
-import android.widget.EditText;
 
 import com.rudzko.firstapp.R;
 import com.rudzko.firstapp.base.BaseActivity;

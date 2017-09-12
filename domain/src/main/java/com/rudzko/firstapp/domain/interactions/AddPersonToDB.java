@@ -27,12 +27,13 @@ public class AddPersonToDB extends UseCase<AddPerson, Void> {
                 DataMyCountry dataCountry = new DataMyCountry
                         (person.getPerson().getCountry().getName(), person.getPerson().getCountry().getCode());
                 DataPerson dataPerson = new DataPerson(person.getPerson().getName(), dataCountry);
+                Log.d("DataPerson created", dataPerson.getCountry().getName());
                 DBManager manager = new DBManager(person.getContext());
                 manager.openDB(true);
                 manager.addPerson(dataPerson);
                 manager.closeDB();
-                Log.d("Sending to db", dataPerson.getName()+" from "+dataPerson.getCountry().getName());
+                Log.d("Sent to DB", dataPerson.getName()+" from "+dataPerson.getCountry().getName());
             }
-        }).just(null);
+        });
     }
 }

@@ -4,14 +4,10 @@ package com.rudzko.firstapp.hw_14;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.TextView;
 
 import com.rudzko.firstapp.R;
 import com.rudzko.firstapp.base.BaseSpinnerAdapter;
-
-import butterknife.ButterKnife;
-
 
 /**
  * @author Olga Rudzko

@@ -1,10 +1,12 @@
 package com.rudzko.firstapp.hw_10;
 
-import android.databinding.ObservableInt;
 import android.databinding.ObservableLong;
 
+import com.rudzko.firstapp.MyApplication;
 import com.rudzko.firstapp.base.BaseViewModel;
 import com.rudzko.firstapp.domain.interactions.CounterUseCase;
+
+import javax.inject.Inject;
 
 import io.reactivex.annotations.NonNull;
 import io.reactivex.observers.DisposableObserver;
@@ -15,8 +17,15 @@ import io.reactivex.observers.DisposableObserver;
 
 public class HW10_ViewModel implements BaseViewModel {
 
+    @Inject
+    CounterUseCase counterUseCase;
+
     public ObservableLong counter=new ObservableLong();
-    private CounterUseCase useCase=new CounterUseCase();
+    //private CounterUseCase useCase=new CounterUseCase();
+
+    public HW10_ViewModel() {
+        MyApplication.appComponent.injectViewModel(this);
+    }
 
     @Override
     public void init() {
@@ -31,7 +40,7 @@ public class HW10_ViewModel implements BaseViewModel {
     @Override
     public void resume() {
 
-            useCase.execute(null, new DisposableObserver<Long>() {
+            counterUseCase.execute(null, new DisposableObserver<Long>() {
                 @Override
                 public void onNext(@NonNull Long aLong) {
                     counter.set(aLong);

@@ -13,25 +13,9 @@ import java.util.List;
  * @author Olga Rudzko
  */
 
-public abstract class BaseSpinnerAdapter<MyClass> extends android.widget.BaseAdapter
-        implements AdapterView.OnItemSelectedListener {
+public abstract class BaseSpinnerAdapter<MyClass> extends android.widget.BaseAdapter {
 
     protected List<MyClass> list = new ArrayList<>();
-
-    public MyClass getChosen() {
-        if (chosen != null) {
-            Log.d("Got country", chosen.toString());
-        } else {
-            Log.d("Error", "Country is not chosen");
-        }
-        return chosen;
-    }
-
-    public void setChosen(MyClass chosen) {
-        this.chosen = chosen;
-    }
-
-    private MyClass chosen;
 
     public void setList(List<MyClass> list) {
         this.list = list;
@@ -47,14 +31,4 @@ public abstract class BaseSpinnerAdapter<MyClass> extends android.widget.BaseAda
         return list.get(position);
     }
 
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        chosen = list.get(position);
-        Log.d("onItemSelected", "selected " + position);
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> parent) {
-        chosen = list.get(0);
-    }
 }

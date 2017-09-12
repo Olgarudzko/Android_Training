@@ -12,11 +12,12 @@ public class UI {
 
     @Inject  //annotation for variable which should be created by dagger
     UseCase1 useCase1;
+
     public UI(){
+        //required in all classes with annotation Inject
         MyApplication.appComponent.inject(this);
     }
     public void testUseCase1(){
-        UseCase1 useCase1=new UseCase1();
         useCase1.getRestData();
     }
 }

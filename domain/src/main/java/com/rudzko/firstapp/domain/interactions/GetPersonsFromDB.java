@@ -26,6 +26,8 @@ public class GetPersonsFromDB extends UseCase<Context, List<Person>> {
 
     @Override
     protected Observable<List<Person>> buildUseCase(final Context context) {
+
+
         return Observable.create(new ObservableOnSubscribe<List<Person>>() {
             @Override
             public void subscribe(@NonNull ObservableEmitter<List<Person>> e) throws Exception {
@@ -35,16 +37,22 @@ public class GetPersonsFromDB extends UseCase<Context, List<Person>> {
                 List <DataPerson> list=manager.getPersons();
                 manager.closeDB();
                 if (list!=null){
+                    Log.d("Start reading array", "from Data");
                     List<Person> ready= new ArrayList<>();
                     for (DataPerson user: list){
+                        Log.d(user.getName(), user.getCountry().getName());
                         MyCountry country=new MyCountry(user.getCountry().getName(), user.getCountry().getCode());
                         Person person=new Person(user.getName(), country);
+//                        Person person=new Person();
+//                        person.setName(user.getName());
+
                         person.setId(user.getId());
+                        ready.add(person);
                     }
                     e.onNext(ready);
                 }
             }
 
         });
-    }
+   }
 }
